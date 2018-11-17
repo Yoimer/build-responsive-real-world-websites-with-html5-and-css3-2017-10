@@ -1,0 +1,33 @@
+/*  h1 and h2 are the selectors and what's inside of curly brackets is the declaration block 
+    the properties are:
+    color and the value is green
+    font-size and value is 40px
+    font-family and value is Helvetica Neue(first choice) and Arial (second choice)
+    
+    */
+
+
+/* childs elements inherits their properties from parents elements, unless
+    these properties are overwritten as in h1 and h2.
+    So this is why paragraph elements get 18 pixels*/
+
+body {
+    font-family: Helvetica Neue, Arial;
+    font-size: 18px;
+}
+
+h1,h2 {
+    color: green;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+p {
+    text-align: justify;
+}
