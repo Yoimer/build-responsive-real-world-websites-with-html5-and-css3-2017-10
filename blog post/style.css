@@ -17,6 +17,12 @@
     these properties are overwritten as in h1 and h2.
     So this is why paragraph elements get 18 pixels*/
 
+.clear-fix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 body {
     font-family: Helvetica Neue, Arial;
     font-size: 18px;
@@ -40,8 +46,39 @@ h2 {
     text-align: justify;
     margin-bottom: 20px;
 }
-}
 
 .author-text {
     font-size: 22px;
+}
+
+.container {
+    width: 1140px;
+    /* container centered to the window 
+    left and right margins are adjusted automatically according to the context of the element
+    which is the browser windows in this case
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;*/
+    /* this is equivalent */
+    margin: 20px, auto, 0, auto; 
+}
+
+.blog-post {
+    background-color: #000fff;
+    width: 75%;
+    float: left;
+    padding-right: 10px;
+}
+
+.other-posts {
+    background-color: #00ff00;
+    width: 25%;
+    float: left;
+}
+
+.author-box {
+    background-color: #ffff00;
+    /* width line color */
+    padding-top: 20px;
+    border-top: 1px solid #808080;
 }
