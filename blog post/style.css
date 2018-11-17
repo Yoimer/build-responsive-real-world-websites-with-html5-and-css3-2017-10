@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /*  h1 and h2 are the selectors and what's inside of curly brackets is the declaration block 
     the properties are:
     color and the value is green
@@ -22,14 +28,18 @@ h1,h2 {
 
 h1 {
     font-size: 40px;
+    margin-bottom: 20px;
 }
 
 h2 {
     font-size: 25px;
+    margin-bottom: 10px;
 }
 
 .main-text {
     text-align: justify;
+    margin-bottom: 20px;
+}
 }
 
 .author-text {
